@@ -39,7 +39,7 @@ class BonusServiceTest {
         BonusService service = new BonusService();
 
         long amount = 1_000_000;
-        boolean registered = true;
+        boolean registered = false;
         long expected = 500;
 
         // вызываем целевой метод:
@@ -53,8 +53,8 @@ class BonusServiceTest {
     void shouldCalculateForNotRegisteredAndUnderLimit2() {
         BonusService service = new BonusService();
 
-        long amount = 1000;
-        boolean registered = true;
+        long amount = 3000;
+        boolean registered = false;
         long expected = 30;
 
         // вызываем целевой метод:
